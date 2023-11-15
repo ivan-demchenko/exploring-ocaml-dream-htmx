@@ -1,0 +1,9 @@
+(executable
+ (name simple_server)
+ (libraries dream)
+ (preprocess (pps lwt_ppx)))
+
+(rule
+ (targets simple_server.ml)
+ (deps simple_server.eml.ml)
+ (action (run dream_eml %{deps} --workspace %{workspace_root})))
