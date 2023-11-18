@@ -2,10 +2,11 @@
 
 ## Running this in a devcontainer
 
-Setup opam:
+Setup `opam`. Run
 ```
-Run eval $(opam env --switch=default) to update the current shell environment
+eval $(opam env --switch=default)
 ```
+... to update the current shell environment
 
 Setup tools:
 ```
