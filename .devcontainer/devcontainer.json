@@ -21,7 +21,9 @@
 		"vscode": {
 			"extensions": [
 				"ocamllabs.ocaml-platform",
-				"piotrpalarz.vscode-gitignore-generator"
+				"piotrpalarz.vscode-gitignore-generator",
+				"streetsidesoftware.code-spell-checker",
+				"EditorConfig.EditorConfig"
 			]
 		}
 	}

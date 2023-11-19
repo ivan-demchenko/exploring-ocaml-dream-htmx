@@ -3,10 +3,14 @@ let () =
   @@ Dream.logger
   @@ Dream.router [
 
-    Dream.get "/:word"
-      (fun request ->
-        Dream.param request "word"
-        |> Template.index_page
+    Dream.get "/"
+      (fun _ ->
+        Template.index_page
+        |> Dream.html);
+
+    Dream.post "/todo/new"
+      (fun _ ->
+        Template.todo_item
         |> Dream.html);
 
   ]

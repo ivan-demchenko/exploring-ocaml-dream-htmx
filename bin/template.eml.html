@@ -1,6 +1,21 @@
-let index_page param =
+let index_page =
   <html>
+    <head>
+      <title>Try OCaml and Dream</title>
+      <script src="https://unpkg.com/htmx.org@1.9.8"></script>
+    </head>
   <body>
-    <h1>The URL parameter was <%s param %>!</h1>
+    <button hx-post="/todo/new" hx-target="#todo-items">
+      Click me
+    </button>
+    <section id="todo-items">
+      Todo items will be shown here
+    </section>
   </body>
   </html>
+
+let todo_item =
+  <div>
+    <input type="checkbox" checked="checked" />
+    <span>Test OCaml</span>
+  </div>
