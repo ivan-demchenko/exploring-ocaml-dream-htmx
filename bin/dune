@@ -1,0 +1,9 @@
+(executable
+ (public_name simple_server)
+ (name main)
+ (libraries dream))
+
+(rule
+ (targets template.ml)
+ (deps template.eml.html)
+ (action (run dream_eml %{deps} --workspace %{workspace_root})))
