@@ -7,7 +7,7 @@ let index_page =
       <script src="https://unpkg.com/htmx.org@1.9.8"></script>
     </head>
   <body>
-    <button hx-post="/todo/new" hx-target="#todo-items">
+    <button hx-post="/todo/new" hx-target="#todo-items" hx-swap="beforeend">
       Click me
     </button>
     <section id="todo-items">
