@@ -2,13 +2,14 @@
 opam-version: "2.0"
 synopsis: "A short synopsis"
 description: "A longer description"
-maintainer: ["Ivan Demchenko"]
-authors: ["Ivan Demchenko"]
-license: "MIT"
-tags: ["ocaml", "dream", "exploration"]
+maintainer: ["Maintainer Name"]
+authors: ["Author Name"]
+license: "LICENSE"
+tags: ["topics" "to describe" "your" "project"]
 homepage: "https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx"
-doc: "https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx"
-bug-reports: "https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx/issues"
+doc: "https://url/to/documentation"
+bug-reports:
+  "https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.11"}
@@ -28,4 +29,5 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx.git"
+dev-repo:
+  "git+https://github.com/ivan-demchenko/exploring-ocaml-dream-htmx.git"
