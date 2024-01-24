@@ -7,9 +7,10 @@ let index_page =
       <script src="https://unpkg.com/htmx.org@1.9.8"></script>
     </head>
   <body>
-    <button hx-post="/todo/new" hx-target="#todo-items" hx-swap="beforeend">
-      Click me
-    </button>
+    <form hx-post="/todo/new" hx-target="#todo-items" hx-swap="beforeend">
+      <input type="text" name="todo.name" />
+      <button>Add a todo</button>
+    </form>
     <section id="todo-items">
       Todo items will be shown here
     </section>
