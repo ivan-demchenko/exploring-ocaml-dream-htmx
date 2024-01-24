@@ -5,7 +5,7 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github ivan-demchenko/exploring-ocaml-dream-htmx))
 
 (authors "Author Name")
 
