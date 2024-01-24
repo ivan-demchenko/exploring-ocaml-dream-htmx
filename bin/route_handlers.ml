@@ -5,7 +5,7 @@ let index_page = fun _ ->
   |> Dream.html
 
 let new_todo = fun _ ->
-  let todo: todo_item = {
+  let todo = {
     id = "1-abc";
     completed = true;
     name = "a new todo";

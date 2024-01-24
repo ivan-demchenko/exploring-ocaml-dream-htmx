@@ -1,17 +1,20 @@
-# Learning OCaml
+# Exploring OCaml and Dream with htmx
 
 ## Running this in a devcontainer
 
 Setup `opam`. Run
 ```
+opam init
 eval $(opam env --switch=default)
 ```
 ... to update the current shell environment
 
 Setup tools:
 ```
-opam install dune ocaml-lsp-server odoc ocamlformat utop
+opam install dune ocaml-lsp-server odoc ocamlformat utop dream
 ```
+
+Notes.
 
 Init the project:
 ```
